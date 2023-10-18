@@ -1,0 +1,97 @@
+.title {
+    animation: fadeInUp;
+    /* referring directly to the animation's @keyframe declaration */
+
+    animation-duration: 1s;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: black;
+        font-size: 40px;
+        padding: 20px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+.container_comentarios_fb {
+    animation: slideInUp;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    width: 100%;
+    border-radius: 30px;
+    margin: 10px;
+    max-width: 1000px;
+    background-color: rgb(245, 243, 243);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main_text {
+        max-width: 1200px;
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        .container_title {
+            display: flex;
+            justify-content: center;
+            font-family: "Poppins";
+            font-weight: bold;
+            font-size: 25px;
+            align-items: center;
+        }
+
+        .container_informacion {
+            font-family: "Poppins";
+            font-size: 22px;
+
+            .email {
+                color: blue;
+            }
+        }
+    }
+}
+
+.container_button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    a {
+        border-radius: 10px;
+        background-color: orangered;
+        margin: 40px;
+        padding: 20px;
+        font-family: "Poppins";
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    a:hover {
+        background-color: blueviolet;
+    }
+
+    a:focus {
+        transform: scale(0.9);
+    }
+}
